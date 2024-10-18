@@ -16,8 +16,11 @@ console.log ('pari e dispari')
 
 
 // chiedo all'utente di scegliere pari o dispari e di scrivere un numero un numero da 1 a 5
-const numberUser = prompt ("scegli pari o dispari")
-const numberUser = prompt ("inserisci un numero da 1 a 5")
 
+const paridispari = prompt ('scegli pari o dispari')
+const numberUser = prompt ('inserisci un numero da 1 a 5')
 
-let numberForPc = Math.random()*5 +1;
+// genero un numero random per il computer
+
+const numberPc = Math.floor(Math.random()*5)+1;
+console.log (numberPc)
