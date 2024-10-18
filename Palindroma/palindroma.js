@@ -11,9 +11,19 @@ console.log('Palindroma')
 
 // scrivo la parola palindroma
 
-const inserisciParola = prompt('inserisci una parola') 
+const parola = prompt ('inserisci parola');
  
-// scrivo la parola lettera per lettera per controllare se funziona
+// scrivo la funzione per verifcare la parola 
 
-let parolaDivisa = inserisciParola.split('')
-console.log(parolaDivisa)
+let parolaInvertita = parola.split('');
+console.log (parolaInvertita);
+
+
+// verifico se la parola è palindroma
+
+
+if (parola == parolaInvertita) {
+    console.log ('La parola è palindroma')
+} else {
+    console.log ('La parola non è palindroma')
+}
